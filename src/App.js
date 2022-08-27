@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Navbar, NavbarBrand} from 'reactstrap';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Navbar dark color="info">
+        <div className="container">
+          <NavbarBrand href="/">Home</NavbarBrand>
+          <NavbarBrand href="/">Sign up</NavbarBrand>
+          <NavbarBrand href="/">Login</NavbarBrand>
+          <NavbarBrand href="/">Profile</NavbarBrand>
+          <NavbarBrand href="/">About</NavbarBrand>
+        </div>
+      </Navbar>
+    </div> 
   );
 }
 
